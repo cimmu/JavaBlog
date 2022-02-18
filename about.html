@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签页</title>
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'>
+    <link rel="stylesheet" href="static/css/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+</head>
+<body>
+<!--顶部导航栏-->
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted stackable secondary menu">
+            <h2 class="ui teal header item">7MU Blog</h2>
+            <a href="#" class="item m-item m-mobile-hide"><i class="small home icon"></i>首页</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+            <a href="#" class="item m-item m-mobile-hide"><i class="small clone icon"></i>归档</a>
+            <a href="#" class="active item m-item m-mobile-hide"><i class="small info icon"></i>关于</a>
+            <div class="right item m-item m-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search Something...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui icon menu toggle button black m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-container m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <img src="https://picsum.photos/id/1005/800/800" alt="" class="ui rounded image">
+            </div>
+            <div class="five wide column">
+                <div class="ui attached segment">关于我</div>
+                <div class="ui attached segment">
+                    <p>William，资深哲♂学家，码数科技创始人，云上梦轩站长，微软、阿里巴巴等集团投资人，京东、淘宝等电商平台战略合作伙伴。
+                        喜欢折腾和搞机，追求新鲜的软硬件，也欢迎小伙伴们一起讨论折腾经验，一起来tree new bee</p>
+                    <p>
+                        作为Microsoft、Google、Intel、NVIDIA、Qualcomm、中国电信、阿里巴巴集团、百度、腾讯、京东、哔哩哔哩、招商银行、台湾华硕股份、深圳万普拉斯科技、中国证监局、国家电网、中国铁路局等数十家国内外企业的投资人之一，并且保持着长期稳定的贸易与投资关系，每年助力企业产生数百亿的交易额的同时，为人低调；</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic left pointing label">编程</div>
+                    <div class="ui orange basic left pointing label">写作</div>
+                    <div class="ui orange basic left pointing label">运动</div>
+                    <div class="ui orange basic left pointing label">自媒体</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic left label m-margin-tb-tiny">Java</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Mysql</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Spring Boot</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Spring Security</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Redis</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Oracle</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Linux</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">RabbitMQ</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">Spring Cloud</div>
+                    <div class="ui teal basic left label m-margin-tb-tiny">React</div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="icon github"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="icon weixin"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-title="仅限广告合作" data-content="QQ：206764920"
+                       data-position="bottom center"><i class="icon qq"></i></a>
+                </div>
+                <div class="ui wechat-qr popup flowing transition hidden">
+                    <img src="./static/images/wechat.jpg" alt="" class="ui rounded image" style="width:120px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container center aligned">
+        <div class="ui inverted stackable divided grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.jpg" class="ui rounded image" style="width:110px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="mailto:gimmgoo@gmail.com" class="item">Email: gimmgoo@gmail.com</a>
+                    <a href="#" class="item">QQ: 88888888</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2021 JavaBlog Designed by 7MU.TOP</p>
+    </div>
+</footer>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'bottom center',
+    });
+    $('.qq').popup();
+</script>
+</body>
+</html>
