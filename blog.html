@@ -38,7 +38,7 @@
 </nav>
 
 <!--中间内容-->
-<div class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
+<div id="waypoint" class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <div class="ui attached segment top">
             <div class="ui link list horizontal">
@@ -603,12 +603,12 @@ h5,h6{font-size:1em;}
     </div>
 </div>
 
-<div class="m-padded m-fixed m-right-bottom">
+<div id="toolbox" class="m-padded m-fixed m-right-bottom" style="display: none">
     <div class="ui vertical icon buttons">
         <button type="button" class="ui toc teal button">目录</button>
         <a href="#comment-container" class="ui teal button">留言</a>
         <button class="ui wechat icon button"><i class="icon weixin"></i></button>
-        <a href="#" class="ui icon button"><i class="icon chevron up"></i></a>
+        <div id="toTopButton" class="ui icon button"><i class="icon chevron up"></i></div>
     </div>
 </div>
 
@@ -616,9 +616,7 @@ h5,h6{font-size:1em;}
     <ol class="js-toc"></ol>
 </div>
 
-<div id="qrcode" class="ui wechat-qr popup flowing transition hidden" style="width: 130px !important">
-    <!--<img src="./static/images/wechat.jpg" alt="" class="ui rounded image" style="width:120px !important;">-->
-</div>
+<div id="qrcode" class="ui wechat-qr popup flowing transition hidden" style="width: 130px !important"></div>
 
 
 <!--底部footer-->
@@ -661,6 +659,8 @@ h5,h6{font-size:1em;}
 <script src="static/lib/prism/prism.js"></script>
 <script src="static/lib/tocbot/tocbot.min.js"></script>
 <script src="static/lib/qrcode/qrcode.min.js"></script>
+<script src="static/lib/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="static/lib/waypoints/jquery.waypoints.min.js"></script>
 <script>
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
@@ -702,6 +702,17 @@ h5,h6{font-size:1em;}
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     });
+
+    $('#toTopButton').click(function(){
+        $(window).scrollTo(0,600)
+    });
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            'down' == direction ? $('#toolbox').show(100) : $('#toolbox').hide(100)
+        }
+    })
 </script>
 </body>
 </html>
